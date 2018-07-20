@@ -3,7 +3,7 @@
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black*/
@@ -39,7 +39,7 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
-  padding: 20px;
+  padding: 0px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -71,7 +71,95 @@ h1 {
   margin-left: 20%;
   margin-right: 20%;
 }
+.menuButton{
+  position: relative;
+  z-index: 1;
+}
 
 .header {
   font-weight: bold;
+}
+@-webkit-keyframes solidColor {
+  0% {
+    background-color: #EE7600;
+  }
+  50% {
+    background-color: #00ee76;
+  }
+  100% {
+    background-color: #EE7600;
+  }
+}
+@-moz-keyframes solidColor {
+  0% {
+    background-color: #EE7600;
+  }
+  50% {
+    background-color: #00ee76;
+  }
+  100% {
+    background-color: #EE7600;
+  }
+}
+@keyframes solidColor {
+  0% {
+    background-color: #EE7600;
+  }
+  50% {
+    background-color: #00ee76;
+  }
+  100% {
+    background-color: #EE7600;
+  }
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #222;
+  color: #FFF;
+}
+
+.skewed-bg {
+  background: darkorange;
+  padding: 200px 0;
+  -webkit-transform: skew(0deg, -10deg);
+  -moz-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -10deg);
+  -o-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  margin-top: -200px;
+  animation: solidColor 10s infinite;
+}
+.skewed-bg .content {
+  -webkit-transform: skew(0deg, 10deg);
+  -moz-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 10deg);
+  -o-transform: skew(0deg, 10deg);
+  transform: skew(0deg, 10deg);
+  text-align: center;
+}
+
+}
+.skewed-bg .content .title {
+  padding-top: 100px;
+  font-weight: normal;
+}
+.skewed-bg .content .text {
+  width: 60%;
+  margin: 25px auto;
+  color: white;
+}
+
+.footer {
+  padding-top: 300px;
+}
+.footer .credits {
+  text-align: center;
+  color: #666;
+}
+.footer .credits .link {
+  color: darkorange;
+  text-decoration: none;
 }

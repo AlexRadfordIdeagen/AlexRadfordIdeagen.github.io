@@ -1,0 +1,73 @@
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+
+// VARS
+$darkorange:  #EE7600;
+$green: #00ee76;
+$paper: #f6efe9;
+
+// ANIMS
+@include keyframes(solidColor){
+  0% {
+    background-color: $darkorange;
+  }
+  50% {
+    background-color: $green;
+  }
+  100% {
+    background-color: $darkorange;
+  }
+}
+
+$main-color: darkorange;
+
+//________________________________
+html,body{
+  height:100%;
+}
+
+body{
+  background: #222;
+  color: #FFF;
+}
+
+.skewed-bg{
+  background: $main-color;
+  padding: 200px 0;
+  @include transform(skew(0deg, -10deg));
+  margin-top: -200px;  
+  animation: solidColor 10s infinite;
+  
+  .content{
+    @include transform(skew(0deg, 10deg));
+    text-align: center;
+    
+    .title{
+      padding-top: 100px;
+      font-weight: normal;
+    }
+    
+    .text{
+      width:60%;
+      margin: 25px auto;      
+      color: lighten($main-color, 55);
+    }
+    
+  } 
+}
+
+.footer{
+  padding-top: 300px;
+  
+  .credits{
+    text-align: center;
+    color: #666;
+    
+    .link{
+      color: $main-color;
+      text-decoration: none;
+    }
+    
+  }
+  
+}
