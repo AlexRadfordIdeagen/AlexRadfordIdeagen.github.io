@@ -10,3 +10,13 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+
+jQuery(document).ready(function($){
+	
+	$('a.scroll-link').click(function(e){
+		$('html,body').animate({
+			scrollTop: $(".content").offset().top -100
+		}, 750);
+	});
+	
+});

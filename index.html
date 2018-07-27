@@ -1,70 +1,120 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Training Page</title>
+  <title>Alex Radford Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+      else {
+        $('nav').removeClass('black')
+      }
+    })
+  </script>
 </head>
+
 <body>
-
-  <html>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://alexradfordideagen.github.io/">Home</a>
-  <a href="https://alexradfordideagen.github.io/about">About</a>
-  <a href="https://alexradfordideagen.github.io/projects">Projects</a>
-  <a href="https://alexradfordideagen.github.io/links">Links </a>
-</div>
-
-<span class ="menuButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-
-<div class="Menu" id="main">
-  
-  
-  <div class="skewed-bg">
-     
-    <div class="content">
-        <div class="foo">
-            <span class="letter" data-letter="A">A</span>
-            <span class="letter" data-letter="L">L</span>
-            <span class="letter" data-letter="E">E</span>
-            <span class="letter" data-letter="X">X</span>
-            <span class="letter"> </span>
-          </div>
-
-            <div class="foo">
-
-            <span class="letter" data-letter="R">R</span>
-            <span class="letter" data-letter="A">A</span>
-            <span class="letter" data-letter="D">D</span>
-            <span class="letter" data-letter="F">F</span>
-            <span class="letter" data-letter="O">O</span>
-            <span class="letter" data-letter="R">R</span>
-            <span class="letter" data-letter="D">D</span>
-            </div>
-            <div class="foo">
-                <span class="letter" data-letter="W">W</span>
-            <span class="letter" data-letter="E">E</span>
-            <span class="letter" data-letter="B">B</span>
-            <span class="letter" data-letter="S">S</span>
-            <span class="letter" data-letter="I">I</span>
-            <span class="letter" data-letter="T">T</span>
-            <span class="letter" data-letter="E">E</span>
-          </div>
-          </div>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">Alex Radford</div>
+      <ul>
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Art</a>
+        </li>
+        <li>
+          <a href="#">Music</a>
+        </li>
+        <li>
+          <a href="#">Programming</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="sec1">
+      <div class="textLogoContainer">
+        <div class="textLogo">
+          <span class="letter" data-letter="A">A</span>
+          <span class="letter" data-letter="L">L</span>
+          <span class="letter" data-letter="E">E</span>
+          <span class="letter" data-letter="X">X</span>
+          <span class="letter"> </span>
+        </div>
+        <div class="textLogo">
+          <span class="letter" data-letter="R">R</span>
+          <span class="letter" data-letter="A">A</span>
+          <span class="letter" data-letter="D">D</span>
+          <span class="letter" data-letter="F">F</span>
+          <span class="letter" data-letter="O">O</span>
+          <span class="letter" data-letter="R">R</span>
+          <span class="letter" data-letter="D">D</span>
         </div>
       </div>
-      <footer class="footer">
-      </footer>
-  <script  src="js/index.js"></script>
+      <a class="scroll-link" href="#content">
+        <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+          <g fill="none" fill-rule="evenodd">
+            <rect width="70" height="118" x="1.5" y="1.5" stroke="#000" stroke-width="3" rx="36" />
+            <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#000" />
+          </g>
+        </svg>
+      </a>
+
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsam alias exercitationem consequuntur dignissimos
+        unde placeat sapiente omnis modi quibusdam neque, vitae aut magni, tempore, quod quisquam quasi ex eveniet? </p>
+    </section>
   </div>
-</div>
+
+</body>
+
 </html>
