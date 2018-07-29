@@ -1,84 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Training Page</title>
+  <title>Alex Radford Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+      else {
+        $('nav').removeClass('black')
+      }
+    })
+  </script>
 </head>
 
 <body>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">Alex Radford</div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="art.html">Art</a>
+        </li>
+        <li>
+          <a href="music.html">Music</a>
+        </li>
+        <li>
+          <a  href="programming.html">Programming</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a class="active" href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+ 
+  
+  
 
-  <html>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://alexradfordideagen.github.io/">Home</a>
-  <a href="https://alexradfordideagen.github.io/about">About</a>
-  <a href="https://alexradfordideagen.github.io/projects">Projects</a>
-  <a href="https://alexradfordideagen.github.io/links">Links </a>
-</div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-
-<div id="main">
-
-  <body>
-    <h1>Alex Radford</h1>
-    <img class="center" height=200 src="https://avatars3.githubusercontent.com/u/37543592?s=460&v=4" alt="My Profile Picture"> </img>
-    <div class="padding">
-      <p class="header"> Current languages I'm learning or would like to learn:</p>
-      <ul id="list">
+<section class="content">
+  <h1>Alex Radford</h1>
+  <img class="center" height=200 src="https://avatars3.githubusercontent.com/u/37543592?s=460&v=4" alt="My Profile Picture"> </img>
+  <div class="padding"></section>
+<section class="content">
+  <p> Current languages I'm learning or would like to learn:</p>
+      <ul  class="content" id="list">
         <li> C# </li>
         <li> C++ </li>
         <li> JavaScript </li>
         <li> Xaml </li>
         <li> HTML </li>
         <li> CSS </li>
-      </ul>
-    </div>
-    <div class="padding">
-      <p class="header"> What I'm interested in:</p>
-      <p> I'm hugely into music, I studied it at university and have a huge passion for all kinds of genre and types. Because of this I play drums, guitar, piano and have sang in both bands and choirs.
-      </p>
-      <div></div>
-      <p>
-        I'm also a big gamer, currently I'm working on a project alongside my apprenticeship to develop a game.
-      </p>
-    </div>
-    <div> </div>
-    <div class="padding">
-
-      <p class="header"> My favourite foods in order:</p>
-      <ol type="1">
-        <li>Lasagna</li>
-        <li>Ceasar Salad</li>
-        <li>Omelette</li>
-      </ol>
-    </div>
-    <div> </div>
-    <div class="padding">
-      <p class="header"> My reccomended sites:</p>
-      <a href="https://www.ideagen.com/">Ideagen</a>
-      <a href="https://www.softwire.com/">Softwire</a>
-      <a href="https://dieantwort.com/#/">Die Antwort</a>
-      <a href="https://pagepark.co.uk/">Page Park</a>
-    </div>
-  </body>
+      </ul></section>
+<section class="content">
+  <p class="header"> What I'm interested in:</p>
+  <p> I'm hugely into music, I studied it at university and have a huge passion for all kinds of genre and types. Because of this I play drums, guitar, piano and have sang in both bands and choirs.
+  </p></section>
+<section class="content">
+  <p>
+    I'm also a big gamer, currently I'm working on a project alongside my apprenticeship to develop a game.
+  </p></section>
+<section class="content">
+    <p class="header"> My favourite foods in order:</p>
+    <ol type="1">
+      <li>Lasagna</li>
+      <li>Ceasar Salad</li>
+      <li>Omelette</li>
+    </ol>
+  </div></section>
+<section class="content">
+    <p class="header"> My reccomended sites:</p>
+    <a href="https://www.ideagen.com/">Ideagen</a>
+    <a href="https://www.softwire.com/">Softwire</a>
+    <a href="https://dieantwort.com/#/">Die Antwort</a>
+    <a href="https://pagepark.co.uk/">Page Park</a>
+  </div></section>
 </div>
-
-</html>
-  
-  
-
-    <script  src="js/about.js"></script>
-
-
-
 
 </body>
 
